@@ -48,8 +48,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/http-kernel" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/maker-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/mime" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/orm-pack" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-idn" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php73" />
@@ -125,8 +127,10 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/http-kernel" />
           <root url="file://$MODULE_DIR$/vendor/symfony/inflector" />
           <root url="file://$MODULE_DIR$/vendor/symfony/maker-bundle" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/mime" />
           <root url="file://$MODULE_DIR$/vendor/symfony/orm-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-idn" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-normalizer" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-php73" />
@@ -198,8 +202,10 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/http-kernel" />
           <root url="file://$MODULE_DIR$/vendor/symfony/inflector" />
           <root url="file://$MODULE_DIR$/vendor/symfony/maker-bundle" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/mime" />
           <root url="file://$MODULE_DIR$/vendor/symfony/orm-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-idn" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-normalizer" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-php73" />
