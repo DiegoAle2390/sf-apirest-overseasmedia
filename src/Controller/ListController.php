@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Task;
 use App\Entity\TaskList;
 use App\Repository\TaskListRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -90,6 +91,37 @@ class ListController extends AbstractFOSRestController
     public function getListsTasksAction(TaskList $list)
     {
         return $this->view($list->getTasks(), response::HTTP_OK);
+    }
+
+
+    /**
+     * Agregar tareas al registro
+     * @Rest\Post("/lists/{id}/tasks", name="post_lists_task")
+     * @Rest\RequestParam(name="title", description="title of the task", nullable=false)
+     * @param ParamFetcher $paramFetcher
+     * @param TaskList $list
+     * @return \FOS\RestBundle\View\View
+     */
+    public function postListsTasksAction(ParamFetcher $paramFetcher, TaskList $list) {
+        if($list) {
+            // TODO: Se obtiene el valor del titulo de la tarea
+            $title = $paramFetcher->get('title');
+
+            // TODO: Se instancia la entidad Task
+            $task = new Task();
+            $task->setTitle($title);
+            $task->setIsComplete(false);
+            $task->setList($list);
+
+            $list->addTask($task);
+
+            $this->entityManager->persist($task);
+            $this->entityManager->flush();
+
+            return $this->view(['message' => 'Tarea agregada correctamente'], response::HTTP_OK);
+        }
+
+        return $this->view(['message' => 'Algo salió mal en la carga de tareas'], Response::HTTP_BAD_REQUEST);
     }
 
 

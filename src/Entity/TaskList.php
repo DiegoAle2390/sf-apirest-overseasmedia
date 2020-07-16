@@ -129,9 +129,4 @@ class TaskList
     {
         $this->tasks = new ArrayCollection();
     }
-
-    function __toString()
-    {
-        return $this->getTitle();
-    }
 }
